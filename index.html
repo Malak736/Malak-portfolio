@@ -12,11 +12,13 @@
 
 </head>
 <body>
+
+
 <!--start header-->
 <header class="header">
     <a href="#" class="logo">Portfolio</a>
     <i class='bx bx-menu' id="menu-icon"></i>
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -30,14 +32,16 @@
         </ul>
     </nav>
 </header>
+<!--end header-->
+
 <!--Section home-->
 <section class="home" id="home">
   <div class="home-content">
     <h1>Malak Kamal</h1>
-    <h1> <span>Frontend Developer</span></h1>
+    <h2 class="track"> Frontend Developer</h2>
     <p>I’m Malak Kamal, a Front-End Developer passionate about building modern, user-friendly websites that combine creativity and precision.</p>
     <div class="social">
-      <a href="#"><i class='bx bxl-whatsapp'></i></a>
+      <a href="https://wa.me/201271502036"><i class='bx bxl-whatsapp'></i></a>
       <a href="https://www.linkedin.com/in/malak-kamal"><i class='bx bxl-linkedin'></i></a>
       <a href="https://malkk5677@gmail.com"><i class='bx bx-envelope' ></i></a>
     </div>
@@ -132,7 +136,7 @@
           <div class="skills-box">
             <div class="skills-content">
                 <div class="prog">
-                    <h3>Tellwend <span>70%</span></h3>
+                    <h3>Tailwind <span>70%</span></h3>
                     <div class="bar"><span></span></div>
                 </div>
                 <div class="prog">
@@ -140,7 +144,7 @@
                     <div class="bar"><span></span></div>
                 </div>
                 <div class="prog">
-                    <h3> css<span>80%</span></h3>
+                    <h3> CSS<span>80%</span></h3>
                     <div class="bar"><span></span></div>
                 </div>
             </div>
@@ -156,8 +160,39 @@
     <h2>No Thing Untill now</h2>
 
 </section>
+<!--end section work Experience-->
+
 <!--start section Offered Services-->
+<section class="services" id="services">
+  <h2>Offered Services</h2>
+  <div class="services-contener">
+    <div class="services-box">
+      <i class='bx bx-code-alt' ></i>
+      <h3>Web development</h3>
+      <p>Creating responsive websites using HTML, CSS, JavaScript.</p>
+      <p>Developing fast and user-friendly interfaces.</p>
+      <p>Optimizing websites for performance and SEO.</p>
+    </div>
+    <div class="services-box">
+      <i class='bx bxs-paint' ></i>
+      <h3>UI/UX Design</h3>
+      <p>Designing clean and modern user interfaces.</p>
+      <p>Ensuring smooth user experience with intuitive layouts.</p>
+      <p>Converting wireframes and prototypes into functional designs</p>
+    </div>
+    <div class="services-box">
+      <i class='bx bxl-react' ></i>
+      <h3>React.js Development</h3>
+      <p>Building dynamic and interactive single-page applications (SPAs).</p>
+      <p>Using reusable components for scalability.</p>
+      <p>Integrating APIs and managing state effectively.</p>
+    </div>
+  </div>  
+</section>
+
+
 <!--end section Offered Services-->
+
 <!--start section why me-->
 <section class="why" id="whyMe">
     <h1>WHy Me?</h1>
@@ -186,10 +221,11 @@
 
 </section>
 <!--end section why me-->
+
 <!-- start section contact  -->
  <section class="contact" id="connect">
     <h2>Contact With Me</h2>
-    <form action="#">
+    <form onsubmit="sendToWhatsApp(event)" action="#">
        <div class="input-box">
         <div class="input-field">
             <input type="text" placeholder="Full name" required>
@@ -215,11 +251,25 @@
         <span class="focus"></span>
        </div>
        <div class="btn-box btns">
-        <button type="submit" class="btn"> submit</button>
+        <button id="waButton" class="btn">Submit</button>
+
        </div>
     </form>
  </section>
-
+ <!-- end section contact  -->
+ <!-- start footer  -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &COPY; 2025 by Malak Kamal | All Rights Reserved. </p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#">
+        <i class='bx bx-up-arrow-alt'></i>
+      </a>
+    </div>
+  </footer>
+ <!-- end fopter -->
+<script src="script.js"></script>
 
 </body>
 </html>
